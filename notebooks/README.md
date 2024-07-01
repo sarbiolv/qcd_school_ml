@@ -31,9 +31,11 @@ hls4ml seamlessly talks to QKeras, making our jobs way easier for us, but there 
 
 ## Getting started
 
-We only assume that you have followed the previous QCD School tutorials, and especially set up the python container. You can start it again with
+We only assume that you have followed the previous QCD School tutorials, and especially set up the python container. We will start it again and install some additional packages:
 ```
 $ docker start -i my_python #you should now see something like cmsusr@40ffea690e46:/code$ 
+pip install qkeras==0.9.0 tensorflow==2.11.1 hls4ml h5py mplhep cernopendata-client pydot graphviz
+pip install --upgrade matplotlib
 jupyter-lab --ip=0.0.0.0 --no-browser
 ```
 Then clone this repository:
